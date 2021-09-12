@@ -29,3 +29,17 @@ while (true) {
 }
 
 console.log(join(i_arr, " "));
+
+// Create a class with a showRoot() function
+class NewClass {
+    constructor(name) {
+        this.name = name;
+    }
+
+    showRoot() {
+        console.log("FROM showRoot() IN NewClass");
+    }
+}
+
+let newClass = new NewClass("sus");
+newClass.showRoot();

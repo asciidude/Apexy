@@ -8,6 +8,8 @@ As of right now, there is no other reason to use it other than nice syntax.
 
 ## Documentation
 Whitespace, newlines, and comments will be transpiled\
+**THIS GENERATES WITHOUT AN AST**, that being said, you will get an error if you name something after a statement or something.\
+It is subject to change that this will generate with an AST in the future.
 
 ### Ignored
 `>> text here` Comment: ignored text when compiled, used for annotations and explinations\
@@ -44,7 +46,11 @@ Whitespace, newlines, and comments will be transpiled\
 `while` Start a while loop\
 `return` Return a value\
 `break` Break out of something\
-`true/false` Boolean statements
+`true/false` Boolean statements\
+`new` Create a new class\
+`class` Used for creating a class object\
+`extend` Extend from a class\
+`self` Alternative for `this` (`this` still exists)
 
 ### Arrows
 Arrows are a little different in Apexy, this language supports both the fat arrow (`=>`) and thin arrow (`->`), in which they act the same way

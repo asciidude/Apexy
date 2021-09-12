@@ -54,6 +54,10 @@ export default async function(filename, tokens, output, options) {
                     content.push('console.log');
                 else if(tokens[i].text == 'fn')
                     content.push('const');
+                else if(tokens[i].text == 'extend')
+                    content.push('extends');
+                else if(tokens[i].text == 'self')
+                    content.push('this');
                 else
                     content.push(tokens[i].text);
 
@@ -61,6 +65,10 @@ export default async function(filename, tokens, output, options) {
             
             case 'set':
                 content.push('let');
+                break;
+            
+            case 'period':
+                content.push('.');
                 break;
             
             case 'colon':

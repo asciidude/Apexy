@@ -13,10 +13,14 @@ let lexer = moo.compile({
   bracket:      ['[', ']'],
   split:        ',',
   math:         ['+', '++', '-', '--', '/', '*', '**', '>', '<', '='],
-  statement:    ['print', 'fn', 'while', 'return', 'break'],
+  statement:    [
+                'print', 'fn', 'while', 'return', 'break', 'new', 'class', 'extend', 'self', 'this',
+                /import [ \t]* [a-zA-Z][a-zA-Z_0-9] [ \t]* from [ \t]* "(?:\\["\\]|[^\n"\\])*"*/
+                ],
   boolean:      ['true', 'false'],
   arrow:        ['=>', '->'],
   set:          'set',
+  period:       '.',
   colon:        [';', ':'],
   identifier:   /[a-zA-Z][a-zA-Z_0-9]*/,
   newline:      { match: /\r\n/, lineBreaks: true },

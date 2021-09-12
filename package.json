@@ -6,7 +6,6 @@
   "version": "1.0.0",
   "description": "Apexy is a programming language built off of Moo!",
   "main": "lexer.js",
-  "devDependencies": {},
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -23,3 +23,17 @@ while (true) {
 }
 
 print(join(i_arr, " "));
+
+>> Create a class with a showRoot() function
+class NewClass {
+    constructor(name) {
+        this.name = name;
+    }
+
+    showRoot() {
+        print("FROM showRoot() IN NewClass");
+    }
+}
+
+set newClass = new NewClass("sus");
+newClass.showRoot();
