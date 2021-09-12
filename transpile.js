@@ -63,16 +63,12 @@ export default async function(filename, tokens, output, options) {
                 content.push('let');
                 break;
             
-            case 'semicolon':
-                content.push(';');
+            case 'colon':
+                content.push(tokens[i].text);
                 break;
             
             case 'arrow':
                 content.push('=>');
-                break;
-
-            case 'assign':
-                content.push('=');
                 break;
 
             case 'identifier':
